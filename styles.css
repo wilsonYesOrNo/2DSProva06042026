@@ -1,0 +1,79 @@
+body {
+    color: white;
+    background: black;
+    margin: 0;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+header {
+    border-bottom: solid 2px rgb(42, 122, 228);
+    padding: 20px;
+    font-size: 32px;
+    color: rgb(42, 122, 228);
+}
+
+.chamada {
+    background: rgb(184, 156, 213);
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* ALTERADO: melhor espaçamento */
+}
+
+.chamada-texto {
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 16px; /* ALTERADO: ajustado para melhor layout */
+}
+
+/* ============================= */
+/* ALTERADO AQUI - 4 FOTOS POR LINHA */
+/* ============================= */
+
+.fotos {
+    display: grid; /* ALTERADO: era flex */
+    grid-template-columns: repeat(4, 1fr); /* ALTERADO: 4 colunas fixas */
+    gap: 20px; /* ALTERADO: espaçamento entre fotos */
+    margin-top: 30px;
+}
+
+/* Card individual */
+.card {
+    text-align: center;
+}
+
+/* ALTERADO: tamanho padronizado apenas nas fotos dos alunos */
+.card img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover; /* Mantém proporção sem distorcer */
+    border-radius: 5px;
+}
+
+/* ============================= */
+
+.categoria {
+    padding: 20px;
+}
+
+.caixa {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #003366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff;
+}
+
+.caixa img {
+    max-width: 100%;
+    max-height: 100%;
+}
